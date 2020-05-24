@@ -1,4 +1,3 @@
-#include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include "func.c"
@@ -20,7 +19,8 @@ int main()
 	printf("Radius  ");
 	scanf("%f",&figure[r][2]);	
 	printf("\n");
-	printf("Circle with central point (%f;%f) and radius %f",figure[r][0],figure[r][1],figure[r][2]);
+	printf("Circle with central point (%f;%f) and radius %f",
+	figure[r][0],figure[r][1],figure[r][2]);
 	printf("Square is %f",CSQ(figure[r][2]));
 	printf("\n");
 	printf("Perimeter is %f",CPL(figure[r][2]));			
@@ -30,7 +30,8 @@ int main()
 	r=0;
 	for(k=0;k<n;k++){
 		for(t=k;t<n-1;t++)
-		ccheck(&figure[t][0],&figure[t][1],&figure[t+1][0],&figure[t+1][1],&figure[t][2],&figure[t+1][2]);
+		ccheck(&figure[t][0],&figure[t][1],&figure[t+1][0],
+		&figure[t+1][1],&figure[t][2],&figure[t+1][2]);
 	}
 	return 0;
 }
