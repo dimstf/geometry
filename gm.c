@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "func.c"
+#include "macr.h"
 int main()
 {
 	int n,t,k,r;
