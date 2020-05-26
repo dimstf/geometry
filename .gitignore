@@ -1,5 +1,6 @@
-# c-files
-1.c
-#another files
-Makefile
-gm
+# .o-files
+gm.o
+func.o
+#another
+bin/
+build/
