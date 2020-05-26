@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "macr.h"
-extern float ccheck(float* x1,float* y1,float* x2,float* y2,float* r1,float* r2);
+extern float check(float* x1,float* y1,float* x2,float* y2,float* r1,float* r2);
 int main()
 {
 	int n,t,k,r;
@@ -30,7 +30,7 @@ int main()
 	r=0;
 	for(k=0;k<n;k++){
 		for(t=k;t<n-1;t++)
-		ccheck(&figure[t][0],&figure[t][1],&figure[t+1][0],
+		check(&figure[t][0],&figure[t][1],&figure[t+1][0],
 		&figure[t+1][1],&figure[t][2],&figure[t+1][2]);
 	}
 	return 0;
