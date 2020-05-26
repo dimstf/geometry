@@ -4,3 +4,4 @@ func.o
 #another
 bin/
 build/
+.travis.yml
