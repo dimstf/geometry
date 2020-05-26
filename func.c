@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "macr.h"
 float ccheck(float* x1,float* y1,float* x2,float* y2,float* r1,float* r2)
 {
 	float f;
