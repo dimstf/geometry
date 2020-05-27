@@ -1,11 +1,9 @@
 language: C
-
+os: Linux
 stages: test
  
  jobs:
   includes:
    -stage: test
-   language: C
-   sudo: required
    script:
     - make
