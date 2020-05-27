@@ -1,6 +1,3 @@
 # .o-files
 gm.o
 func.o
-#another
-bin/
-build/

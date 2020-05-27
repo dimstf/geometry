@@ -1,4 +1,2 @@
 language: C
-branches:
- only:
-  -master
+
