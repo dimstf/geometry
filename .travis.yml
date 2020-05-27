@@ -7,4 +7,4 @@ stages: test
    -stage: test
    language: C
    script:
-    - gcc -lm -Wall _Werror gm.c func.c -o bin/circles
+    - gcc -lm -Wall -Werror gm.c func.c -o bin/circles
