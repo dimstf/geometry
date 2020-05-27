@@ -1,11 +1,5 @@
-language: C
+sudo: required
 git:
- depth: 1
-os: Linux
-stages: test
- 
- jobs:
-  includes:
-   -stage: test
-   install:
-    - make
+  depth: 0
+language: C
+script: bash ./tr.sh
