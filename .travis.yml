@@ -1,4 +1,6 @@
 language: C
+git:
+ depth: 1
 os: Linux
 stages: test
  
