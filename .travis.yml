@@ -1,2 +1,10 @@
 language: C
 
+stages: test
+ 
+ jobs:
+  includes:
+   -stage: test
+   language: C
+   script:
+    - gcc -lm -Wall _Werror gm.c func.c -o bin/circles
