@@ -6,5 +6,6 @@ stages: test
   includes:
    -stage: test
    language: C
+   sudo: required
    script:
-    - gcc -lm -Wall -Werror gm.c func.c -o bin/circles
+    - make
