@@ -5,5 +5,5 @@ stages: test
  jobs:
   includes:
    -stage: test
-   script:
+   install:
     - make
