@@ -7,3 +7,6 @@ build/test.o
 build/functest.o
 build/gm.o
 build/func.o
+#another
+bin/test
+bin/circles
