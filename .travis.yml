@@ -1,6 +1,0 @@
-sudo: required
-git:
-  depth: 2
-language: C
-script: bash ./tr.sh
-bash ./test.sh
