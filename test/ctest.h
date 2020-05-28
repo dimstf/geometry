@@ -5,5 +5,5 @@
 void assert_equal_float(float p1,float p2)
 {
     if(p1!=p2)
-        abort;
+        abort();
 }
