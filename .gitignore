@@ -1,3 +1,9 @@
 # .o-files
 gm.o
 func.o
+test.o
+functest.o
+build/test.o
+build/functest.o
+build/gm.o
+build/func.o
