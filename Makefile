@@ -1,4 +1,4 @@
-.PHONY: clean test test_clean
+.PHONY: clean test
 CC=gcc
 CFLAGS=-Wall -Werror
 all: bin/circles
@@ -9,7 +9,7 @@ build/gm.o: gm.c
 build/func.o: func.c
 	$(CC) -lm $(CFLAGS) -c -o build/func.o func.c
 clean:
-	rm build/func.o build/gm.o
+	rm build/func.o build/gm.o build/test.o build/functest.o
 test: bin/test
 bin/test: build/test.o build/functest.o	
 	$(CC) -lm build/test.o build/functest.o -o bin/test
@@ -17,6 +17,4 @@ build/functest.o: func.c
 	$(CC) -lm $(CFLAGS) -c -o build/functest.o func.c
 build/test.o: test/test1.c
 	$(CC) -lm $(CFLAGS) -c -o build/test.o test/test1.c
-test_clean:
-	rm build/test.o build/functest.o
 

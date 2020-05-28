@@ -13,21 +13,18 @@ int main()
     float figure[t][3];
     for (k = n; k > 0; k--) {
         printf("Circle\n");
-        printf("Center point is ");
+        printf("Center point: ");
         scanf("%f", &figure[r][0]);
         scanf("%f", &figure[r][1]);
         printf("\n");
-        printf("Radius  ");
+        printf("Radius: ");
         scanf("%f", &figure[r][2]);
-        printf("\n");
         printf("Circle with central point (%f;%f) and radius %f",
                figure[r][0],
                figure[r][1],
                figure[r][2]);
-        printf("Square is %f", CSQ(figure[r][2]));
-        printf("\n");
-        printf("Perimeter is %f", CPL(figure[r][2]));
-        printf("\n");
+        printf("Square:%f\n", CSQ(figure[r][2]));
+        printf("Perimeter: %f\n", CPL(figure[r][2]));
         r++;
     }
     r = 0;

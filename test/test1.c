@@ -1,6 +1,6 @@
-#include "ctest.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "ctest.h"
 extern float
 check(float* x1, float* y1, float* x2, float* y2, float* r1, float* r2);
 int main()
