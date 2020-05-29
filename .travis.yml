@@ -2,4 +2,4 @@ sudo: required
 git:
   depth: 1
 language: C
-script: bash ./tr.sh
+script: make all test
