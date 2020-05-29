@@ -1,6 +1,6 @@
 .PHONY: clean test
 CC=gcc
-CFLAGS=-lm -Wall -Werror -c -o
+CFLAGS=-std=c99 -lm -Wall -Wextra -Werror -c -o
 all: bin/circles
 bin/circles: build/gm.o build/func.o
 	$(CC) -lm build/func.o build/gm.o -o bin/circles
