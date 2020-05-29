@@ -3,4 +3,3 @@ git:
   depth: 1
 language: C
 script: bash ./tr.sh
-bash ./test.sh
